@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohan Prajapati - Software Engineer specializing in Web Development, AI/ML, and Full-Stack Solutions. View my portfolio, projects, and experience." />
+  <meta name="keywords" content="Software Engineer, Web Development, React, Node.js, Python, AI/ML, Full-Stack" />
+  <title>Rohan Prajapati | Software Engineer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Scripts -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="#home" class="logo">
+          <span class="logo-text">Rohan</span>
+          <span class="logo-dot">.</span>
+        </a>
+      </div>
+      
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="assets/Rohan_Prajapati_Resume.pdf" class="nav-link resume-link" download>
+          <i class="fas fa-download"></i>
+          Resume
+        </a>
+      </div>
+      
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fas fa-code"></i>
+            <span>Software Engineer</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight">Rohan</span>
+            <span class="wave">👋</span>
+          </h1>
+          <p class="hero-subtitle">
+            I build exceptional digital experiences that combine cutting-edge technology with intuitive design. 
+            Specializing in full-stack development, AI/ML integration, and scalable web applications.
+          </p>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-rocket"></i>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="profile-card">
+            <img src="assets/images/profile.jpg" alt="Rohan Prajapati" class="profile-image" />
+            <div class="profile-overlay">
+              <div class="tech-stack">
+                <div class="tech-item">React</div>
+                <div class="tech-item">Node.js</div>
+                <div class="tech-item">Python</div>
+                <div class="tech-item">AWS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate about creating impactful software solutions</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-description">
+            I'm a software engineer with a passion for building innovative solutions that solve real-world problems. 
+            With expertise in modern web technologies, cloud infrastructure, and machine learning, I create 
+            scalable applications that deliver exceptional user experiences.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h4>Education</h4>
+                <p>Computer Science Degree</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Open to Remote & Relocation</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Experience</h4>
+                <p>3+ Years in Software Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="experience-card">
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Full-Stack Development</h4>
+                <p>Building scalable web applications with modern frameworks</p>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="experience-content">
+                <h4>AI/ML Integration</h4>
+                <p>Implementing intelligent features and data-driven solutions</p>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="experience-content">
+                <h4>Cloud Architecture</h4>
+                <p>Designing and deploying applications on cloud platforms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3 class="category-title">
+            <i class="fas fa-code"></i>
+            Frontend Development
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h4>React & Redux</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h4>JavaScript/TypeScript</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="95"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h4>HTML5 & CSS3</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3 class="category-title">
+            <i class="fas fa-server"></i>
+            Backend Development
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <h4>Node.js & Express</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h4>Python & Django</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="80"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4>Databases</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3 class="category-title">
+            <i class="fas fa-tools"></i>
+            Tools & Platforms
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <h4>AWS & Cloud</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="75"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-docker"></i>
+              </div>
+              <h4>Docker & CI/CD</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="70"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h4>Git & GitHub</h4>
+              <div class="skill-level">
+                <div class="skill-bar" data-level="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">My journey in software development</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineering Intern</h3>
+              <span class="company">XYZ Corporation</span>
+              <span class="duration">May 2024 - July 2024</span>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievements">
+                <li>Developed React UI components for a dashboard used by 500+ employees, improving user experience by 40%</li>
+                <li>Optimized REST API endpoints, reducing payload size by 40% and improving response times by 60%</li>
+                <li>Implemented automated testing with Jest and React Testing Library, achieving 85% code coverage</li>
+                <li>Collaborated with cross-functional teams using Agile methodologies and Git workflow</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Jest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Hackathon Lead & Winner</h3>
+              <span class="company">ABC Innovation Challenge</span>
+              <span class="duration">March 2024</span>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievements">
+                <li>Led a team of 4 developers to build an NLP-powered chatbot, winning 1st place among 50+ teams</li>
+                <li>Deployed solution on AWS Lambda with 0.5s cold start latency and 99.9% uptime</li>
+                <li>Integrated multiple AI services including OpenAI GPT and sentiment analysis</li>
+                <li>Presented solution to industry experts and secured potential partnership opportunities</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AWS Lambda</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">OpenAI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Freelance Web Developer</h3>
+              <span class="company">Various Clients</span>
+              <span class="duration">2022 - Present</span>
+            </div>
+            <div class="timeline-body">
+              <ul class="achievements">
+                <li>Built 15+ responsive websites and web applications for diverse client needs</li>
+                <li>Implemented e-commerce solutions with payment processing and inventory management</li>
+                <li>Optimized website performance, achieving 95+ Lighthouse scores</li>
+                <li>Provided ongoing maintenance and support, maintaining 100% client satisfaction</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Showcasing my best work and technical expertise</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-image">
+            <img src="assets/images/smarthealth-thumb.jpg" alt="SmartHealth App" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://demo-smarthealth.com" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="https://github.com/user/smarthealth" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>SmartHealth App</h3>
+              <span class="project-badge">Featured</span>
+            </div>
+            <p class="project-description">
+              A comprehensive health monitoring application that integrates with wearable devices and provides 
+              personalized health insights using machine learning algorithms.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">HealthData API</span>
+              <span class="tech-tag">TensorFlow</span>
+            </div>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">10K+</span>
+                <span class="metric-label">Downloads</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">4.8★</span>
+                <span class="metric-label">Rating</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">95%</span>
+                <span class="metric-label">Accuracy</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/ecommerce-thumb.jpg" alt="E-Commerce Platform" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>E-Commerce Platform</h3>
+            </div>
+            <p class="project-description">
+              Full-stack e-commerce solution with real-time inventory management, payment processing, 
+              and admin dashboard for business operations.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe</span>
+            </div>
+          </div>
+        </article>
+        
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/ai-chatbot-thumb.jpg" alt="AI Chatbot" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>AI-Powered Chatbot</h3>
+            </div>
+            <p class="project-description">
+              Intelligent chatbot using natural language processing to provide customer support 
+              and answer queries with 90% accuracy.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss opportunities and collaborations</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>rohan.prajapati@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Open to Remote & Relocation</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Availability</h4>
+              <p>Available for new opportunities</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/xyz" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Rohan Prajapati</h3>
+          <p>Building the future, one line of code at a time.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/username" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/username" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/username" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="mailto:rohan.prajapati@email.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rohan Prajapati. All rights reserved.</p>
+        <p>Built with <i class="fas fa-heart"></i> and modern web technologies</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>

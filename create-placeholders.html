@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Image Generator</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .placeholder {
+            width: 400px;
+            height: 250px;
+            margin: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .smarthealth { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .ecommerce { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .ai-chatbot { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .instructions {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <h2>Portfolio Placeholder Images</h2>
+            <p>Right-click on each image below and "Save image as..." to your assets/images/ folder:</p>
+            <ul>
+                <li>smarthealth-thumb.jpg</li>
+                <li>ecommerce-thumb.jpg</li>
+                <li>ai-chatbot-thumb.jpg</li>
+            </ul>
+        </div>
+        
+        <div class="placeholder smarthealth">
+            SmartHealth App<br>
+            React Native • Firebase • HealthData API
+        </div>
+        
+        <div class="placeholder ecommerce">
+            E-Commerce Platform<br>
+            React • Node.js • MongoDB • Stripe
+        </div>
+        
+        <div class="placeholder ai-chatbot">
+            AI-Powered Chatbot<br>
+            Python • OpenAI • FastAPI • Docker
+        </div>
+    </div>
+</body>
+</html> 
