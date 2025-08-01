@@ -168,7 +168,6 @@ portofolio-website/
 
 For questions or customization help:
 - Email: rohan.prajapati@email.com
-- GitHub: [Your GitHub Profile]
 
 ## 📄 License
 
