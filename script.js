@@ -229,6 +229,39 @@ function initProjectCards() {
   });
 }
 
+// ===== THEME TOGGLE =====
+(function() {
+  const root = document.documentElement;
+  const themeToggleBtn = document.getElementById('themeToggle');
+  const THEME_KEY = 'theme';
+
+  // Set dark theme as default
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    themeToggleBtn.innerHTML =
+      theme === 'dark'
+        ? '<i class="fas fa-moon"></i> Dark'
+        : '<i class="fas fa-sun"></i> Light';
+    localStorage.setItem(THEME_KEY, theme);
+  }
+
+  // Detect saved or system theme
+  function getPreferredTheme() {
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved) return saved;
+    // Default to dark
+    return 'dark';
+  }
+
+  // Initial theme
+  setTheme(getPreferredTheme());
+
+  themeToggleBtn.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme');
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+})();
+
 // ===== UTILITY FUNCTIONS =====
 
 // Show notification

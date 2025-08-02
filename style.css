@@ -168,32 +168,20 @@ body {
   margin: 0 auto;
   padding: 0 var(--spacing-6);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Change from flex-start to space-between */
   align-items: center;
   height: 80px;
 }
 
-.nav-brand .logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: var(--font-size-xl);
-  color: var(--gray-900);
-}
-
-.logo-text {
-  color: var(--gray-900);
-}
-
-.logo-dot {
-  color: var(--primary-color);
+.nav-brand {
+  margin-right: var(--spacing-8); /* Add spacing between logo and menu */
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
   gap: var(--spacing-8);
+  margin-left: auto; /* Push nav-menu to the right */
 }
 
 .nav-link {
@@ -262,20 +250,10 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: var(--bg-primary); /* Use your main background color */
   position: relative;
   overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  opacity: 0.3;
+  box-shadow: 0 2px 24px 0 rgb(99 102 241 / 0.04); /* Subtle shadow for depth */
 }
 
 .hero-container {
@@ -1254,6 +1232,127 @@ section:nth-child(even) {
 .back-to-top:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
+}
+
+/* ===== DARK THEME ===== */
+[data-theme="dark"] {
+  --bg-primary: #000000;
+  --bg-secondary: #101010;
+  --bg-card: #181818;
+  --bg-hero: linear-gradient(135deg, #181818 0%, #000000 100%);
+  --primary-color: #6366f1;
+  --primary-light: #818cf8;
+  --primary-dark: #4f46e5;
+  --accent-color: #06b6d4;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --white: #ffffff;
+  --gray-50: #181818;
+  --gray-100: #222;
+  --gray-200: #333;
+  --gray-300: #444;
+  --gray-400: #666;
+  --gray-500: #888;
+  --gray-600: #aaa;
+  --gray-700: #ccc;
+  --gray-800: #eee;
+  --gray-900: #fff;
+  --black: #000000;
+}
+
+[data-theme="dark"] body {
+  color: var(--gray-700);
+  background-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .navbar {
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+[data-theme="dark"] .navbar.scrolled {
+  background: rgba(0, 0, 0, 0.98);
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .nav-link {
+  color: var(--gray-600);
+}
+
+[data-theme="dark"] .nav-link:hover {
+  color: var(--primary-color);
+}
+
+[data-theme="dark"] .resume-link {
+  background: var(--primary-color);
+  color: var(--white) !important;
+}
+
+[data-theme="dark"] .hero {
+  background: var(--bg-hero);
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .logo-text,
+[data-theme="dark"] .footer-brand h3 {
+  color: var(--white);
+}
+
+[data-theme="dark"] .footer {
+  background: #000;
+  color: var(--gray-400);
+}
+
+[data-theme="dark"] .footer-bottom i {
+  color: var(--error-color);
+}
+
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .skills-category,
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .timeline-content,
+[data-theme="dark"] .contact-form,
+[data-theme="dark"] .highlight-item,
+[data-theme="dark"] .experience-item,
+[data-theme="dark"] .contact-item {
+  background: var(--bg-card);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-200);
+}
+
+[data-theme="dark"] .back-to-top {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+[data-theme="dark"] .social-link {
+  background: #181818;
+  color: var(--gray-400);
+}
+
+[data-theme="dark"] .social-link:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+/* Toggle Button Styles */
+.theme-toggle-btn {
+  position: static;
+  margin-left: 0; /* Remove extra left margin */
+  margin-right: 0; /* Remove extra right margin */
+  background: var(--bg-card);
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: var(--spacing-2) var(--spacing-4); /* Match .resume-link */
+  font-size: 1.1rem;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2); /* Match .nav-link gap */
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
